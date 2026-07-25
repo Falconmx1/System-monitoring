@@ -87,4 +87,14 @@ def main():
         print("\n\n👋 Saliendo del programa...")
         sys.exit(0)
     except Exception as e:
-        print(f"
+        print(f"❌ Error: {e}")
+        sys.exit(1)
+
+
+def cli():
+    """Entry point para setup.py"""
+    main()
+
+
+if __name__ == "__main__":
+    main()
