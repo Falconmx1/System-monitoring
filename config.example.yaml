@@ -1,0 +1,37 @@
+# Configuración del sistema de monitoreo
+
+# Umbrales de alerta (en porcentaje)
+thresholds:
+  cpu: 80
+  memory: 85
+  disk: 90
+
+# Intervalo de monitoreo (segundos)
+interval: 5
+
+# Alertas
+alerts:
+  email:
+    enabled: false
+    smtp_server: smtp.gmail.com
+    smtp_port: 587
+    username: tu_email@gmail.com
+    password: tu_contraseña
+    to: destinatario@email.com
+  slack:
+    enabled: false
+    webhook_url: https://hooks.slack.com/services/xxx/yyy/zzz
+  webhook:
+    enabled: false
+    url: http://tu-servidor.com/webhook
+
+# Interfaz web
+web:
+  host: 0.0.0.0
+  port: 5000
+  debug: false
+
+# Exportación
+export:
+  format: json  # json o csv
+  path: ./exports/
