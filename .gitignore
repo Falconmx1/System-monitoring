@@ -11,6 +11,7 @@ venv/
 env/
 ENV/
 .venv
+*.pyc
 
 # Databases
 *.db
@@ -37,3 +38,7 @@ config.yml
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Exports
+export_*.json
+export_*.csv
