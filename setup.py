@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "sysmon=src.main:cli",
+            "sysmon=run:main",
         ],
     },
 )
